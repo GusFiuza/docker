@@ -34,3 +34,11 @@ Dockerfiles presentes:
   Geração da imagem:
   
     - docker build -t gusfiuza/maven:0.1 -f maven.Dockerfile .
+    
+  Instruções de uso:
+
+      - Com o Docker instalado, execute o terminal e acesse o pasta onde está seu projeto;
+      - No terminal linux execute
+        - docker run -it -v $(pwd):/home --name maven gusfiuza/maven:0.1
+      - No terminal do container criado execute
+      - java {seu arquivo}.java
