@@ -24,3 +24,23 @@ Dockerfiles presentes:
     - Abra seu navegador
     - Acesse localhost
     - Cole o token e tecle [ENTER]
+ 
+ 2. OpenJDK, Maven e Jenkins
+
+  Nome da imagem: gusfiuza/jenkins
+  Versão atual: 0.1
+  Data da criação: 09/11/2019
+
+  Geração da imagem:
+  
+    - docker build -t gusfiuza/jenkins:0.1 -f jenkins.Dockerfile .
+
+  Instruções de uso:
+
+    - Com o Docker instalado, execute no terminal:
+      - docker run -d -p 8180:8180  --name jenkins gusfiuza/jenkins:0.1
+      - docker exec jenkins cat /root/.jenkins/secrets/initialAdminPassword
+    - Copie o token apresentado
+    - Abra seu navegador
+    - Acesse 0.0.0.0:8180
+    - Cole o token e tecle [ENTER]
